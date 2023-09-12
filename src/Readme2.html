@@ -1,0 +1,15 @@
+Render Props - It is just a prop - name
+should be render, but its not neceesary
+- the prop should be a function that
+returns a React element or JSX - usage:
+a rendering logic can be extracted
+outside and passed as rendered prop for
+reusge across multiple components
+function User() { return (
+<ProfileCard
+  render="{renderCurrency}"
+/>
+<AccountStatement
+  render="{renderCurrency}"
+/>
+) }
